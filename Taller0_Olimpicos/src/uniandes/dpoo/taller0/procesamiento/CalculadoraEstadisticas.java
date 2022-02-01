@@ -66,7 +66,21 @@ public class CalculadoraEstadisticas
 	// ************************************************************************
 	// Métodos
 	// ************************************************************************
+    /**
+     * Obtiene el pais de un determinado atleta
+     */
+	public String PaisDeAtleta(String nombreInput)
+	{
+		Atleta elAtleta=buscarAtleta(nombreInput);
+		String paisRetorno="";
+		if (elAtleta != null) 	
+		{	
+	      paisRetorno=elAtleta.darPais();
 
+		}
+		return paisRetorno;
+	}
+	
 	/**
 	 * Calcula cuáles fueron los atletas que participaron en cada evento para el año
 	 * indicado
